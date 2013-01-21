@@ -46,7 +46,7 @@ node[:webapp][:apps].each do |app|
       append  true
     end
   when "php"
-    include_recipe "php::php5-fpm"
+    include_recipe "php-fpm"
   end
 
   webapp_app_skel app[:id] do
